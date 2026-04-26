@@ -1,13 +1,13 @@
 :root {
-    --primary: #2563eb;
-    --primary-dark: #1d4ed8;
-    --secondary: #64748b;
-    --accent: #f59e0b;
+    --primary: #F87B1B;
+    --primary-dark: #D66714;
+    --secondary: #4B5E8A;
+    --accent: #F87B1B;
     --success: #10b981;
     --danger: #ef4444;
-    --warning: #f59e0b;
-    --info: #3b82f6;
-    --dark: #0f172a;
+    --warning: #F87B1B;
+    --info: #11224E;
+    --dark: #11224E;
     --light: #f8fafc;
     --gray-100: #f1f5f9;
     --gray-200: #e2e8f0;
@@ -126,7 +126,7 @@ main {
 .btn-primary:hover {
     background-color: var(--primary-dark);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 4px 12px rgba(248, 123, 27, 0.3);
 }
 
 .btn-outline-danger {
@@ -146,7 +146,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #f1f5f9 0%, #cbd5e1 100%);
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
     padding: 2rem;
 }
 

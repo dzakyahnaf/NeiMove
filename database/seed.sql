@@ -2,7 +2,7 @@
 
 INSERT INTO `users` (`nama`, `email`, `password`, `role`) VALUES
 ('Admin Utama', 'admin@example.com', '$2y$10$K7AQBUtMbAiUfzsjpo./.uL7cfRTVtiAqIbrK6qYZ8qwpJcjUlWZS', 'admin'),
-('Dzaky User', 'user@example.com', '$2y$10$K7AQBUtMbAiUfzsjpo./.uL7cfRTVtiAqIbrK6qYZ8qwpJcjUlWZS', 'user');
+('Tasya User', 'user@example.com', '$2y$10$K7AQBUtMbAiUfzsjpo./.uL7cfRTVtiAqIbrK6qYZ8qwpJcjUlWZS', 'user');
 
 INSERT INTO `mobil` (`nama`, `foto`, `tipe`, `transmisi`, `kapasitas`, `harga_per_hari`, `deskripsi`) VALUES
 ('Tesla Model S', 'tesla_model_s.jpg', 'EV', 'Matic', 5, 1500000.00, 'Mobil elektrik mewah dengan fitur autopilot.'),
