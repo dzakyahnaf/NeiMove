@@ -10,14 +10,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     
-    <!-- CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css?v=<?php echo time(); ?>">
+    
+    <!-- JS Libraries -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../assets/js/main.js" defer></script>
 </head>
 <body>
-    <header class="navbar">
+    <header class="navbar <?php echo ($activePage == 'home') ? 'navbar-transparent' : 'navbar-solid'; ?>">
         <div class="container">
             <div class="nav-brand">
                 <a href="../pages/home.php">
@@ -48,4 +53,4 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="<?php echo ($activePage == 'home') ? 'home-page' : ''; ?>">
