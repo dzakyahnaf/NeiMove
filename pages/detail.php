@@ -50,16 +50,16 @@ include '../includes/header.php';
 
             <div class="detail-specs-grid">
                 <div class="detail-spec-card">
-                    <i data-lucide="users" size="24"></i>
+                    <i data-lucide="package" size="24"></i>
                     <div>
-                        <h4>Kapasitas</h4>
-                        <p><?php echo $car['kapasitas']; ?> Orang</p>
+                        <h4>Kapasitas Muatan</h4>
+                        <p><?php echo $car['kapasitas']; ?> Kg</p>
                     </div>
                 </div>
                 <div class="detail-spec-card">
-                    <i data-lucide="settings-2" size="24"></i>
+                    <i data-lucide="truck" size="24"></i>
                     <div>
-                        <h4>Transmisi</h4>
+                        <h4>Jenis Armada</h4>
                         <p><?php echo $car['transmisi']; ?></p>
                     </div>
                 </div>
@@ -84,7 +84,7 @@ include '../includes/header.php';
         <div class="detail-sidebar">
             <div class="booking-card">
                 <div class="mb-4">
-                    <span style="opacity: 0.7; font-size: 0.9rem;">Harga Sewa</span>
+                    <span style="opacity: 0.7; font-size: 0.9rem;">Harga Layanan</span>
                     <h2 style="font-size: 2rem; font-weight: 800;">Rp <?php echo number_format($car['harga_per_hari'], 0, ',', '.'); ?><span style="font-size: 1rem; font-weight: 400; opacity: 0.7;">/hari</span></h2>
                 </div>
 
@@ -125,7 +125,7 @@ include '../includes/header.php';
                 </form>
 
                 <p style="text-align: center; font-size: 0.8rem; opacity: 0.5; margin-top: 1.5rem;">
-                    *Harga belum termasuk biaya driver (jika dipilih) dan bensin.
+                    *Harga belum termasuk biaya asuransi pengiriman dan bahan bakar.
                 </p>
             </div>
         </div>

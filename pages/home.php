@@ -3,7 +3,7 @@ session_start();
 require_once '../config/database.php';
 $conn = getConnection();
 
-$title = "Sewa Mobil Premium";
+$title = "Layanan Pengiriman & Angkutan Barang";
 $activePage = 'home';
 
 // Handle Filter
@@ -53,20 +53,20 @@ include '../includes/header.php';
         <div class="swiper-wrapper">
             <div class="swiper-slide slide-1">
                 <div class="container slide-content">
-                    <h1>Temukan Mobil <span class="text-primary">Impian</span> Anda</h1>
-                    <p>Penyewaan mobil premium dengan layanan terbaik untuk perjalanan tak terlupakan Anda.</p>
+                    <h1>Solusi <span class="text-primary">Pengiriman</span> Barang</h1>
+                    <p>Layanan angkutan barang cepat dan aman untuk segala kebutuhan bisnis dan pribadi Anda.</p>
                 </div>
             </div>
             <div class="swiper-slide slide-2">
                 <div class="container slide-content">
-                    <h1>Kenyamanan <span class="text-primary">Eksklusif</span></h1>
-                    <p>Rasakan pengalaman berkendara mewah dengan koleksi mobil premium kami.</p>
+                    <h1>Pindahan <span class="text-primary">Tanpa Repot</span></h1>
+                    <p>Tim profesional kami siap membantu pindahan rumah atau kantor Anda dengan aman dan efisien.</p>
                 </div>
             </div>
             <div class="swiper-slide slide-3">
                 <div class="container slide-content">
-                    <h1>Perjalanan <span class="text-primary">Tanpa Batas</span></h1>
-                    <p>Armada terawat dengan dukungan pelanggan 24/7 untuk ketenangan Anda.</p>
+                    <h1>Armada <span class="text-primary">Lengkap & Handal</span></h1>
+                    <p>Tersedia berbagai pilihan armada mulai dari blind van hingga truk besar untuk kapasitas apa pun.</p>
                 </div>
             </div>
         </div>
@@ -82,11 +82,11 @@ include '../includes/header.php';
     <div class="filter-wrapper">
         <form action="" method="GET" class="filter-form">
             <div class="form-group">
-                <label><i data-lucide="search" size="18"></i> Cari Mobil</label>
-                <input type="text" name="search" class="form-control" placeholder="Nama mobil..." value="<?php echo htmlspecialchars($search); ?>">
+                <label><i data-lucide="search" size="18"></i> Cari Layanan</label>
+                <input type="text" name="search" class="form-control" placeholder="Cari armada..." value="<?php echo htmlspecialchars($search); ?>">
             </div>
             <div class="form-group">
-                <label><i data-lucide="layers" size="18"></i> Kategori</label>
+                <label><i data-lucide="layers" size="18"></i> Kategori Angkutan</label>
                 <select name="kategori" class="form-control">
                     <option value="">Semua Kategori</option>
                     <option value="pribadi" <?php echo $kategori == 'pribadi' ? 'selected' : ''; ?>>Mobil Pribadi</option>
@@ -95,11 +95,12 @@ include '../includes/header.php';
                 </select>
             </div>
             <div class="form-group">
-                <label><i data-lucide="settings-2" size="18"></i> Transmisi</label>
-                <select name="transmisi" class="form-control">
-                    <option value="">Semua Transmisi</option>
-                    <option value="Manual" <?php echo $transmisi == 'Manual' ? 'selected' : ''; ?>>Manual</option>
-                    <option value="Matic" <?php echo $transmisi == 'Matic' ? 'selected' : ''; ?>>Matic</option>
+                <label><i data-lucide="truck" size="18"></i> Jenis Armada</label>
+                <select name="armada_type" class="form-control">
+                    <option value="">Semua Armada</option>
+                    <option value="Van" <?php echo $search == 'Van' ? 'selected' : ''; ?>>Blind Van</option>
+                    <option value="Pickup" <?php echo $search == 'Pickup' ? 'selected' : ''; ?>>Pickup</option>
+                    <option value="Truk" <?php echo $search == 'Truk' ? 'selected' : ''; ?>>Truk Engkel</option>
                 </select>
             </div>
             <div class="form-group">
@@ -123,16 +124,16 @@ include '../includes/header.php';
                     <div class="car-card-content">
                         <div class="car-card-header">
                             <h3 class="car-name"><?php echo $car['nama']; ?></h3>
-                            <div class="car-price">Rp <?php echo number_format($car['harga_per_hari'], 0, ',', '.'); ?><span>/hari</span></div>
+                            <div class="car-price">Rp <?php echo number_format($car['harga_per_hari'], 0, ',', '.'); ?><span>/trip</span></div>
                         </div>
                         <div class="car-specs-mini">
-                            <div class="spec-item"><i data-lucide="users" size="16"></i> <?php echo $car['kapasitas']; ?></div>
-                            <div class="spec-item"><i data-lucide="settings-2" size="16"></i> <?php echo $car['transmisi']; ?></div>
+                            <div class="spec-item"><i data-lucide="package" size="16"></i> <?php echo $car['kapasitas']; ?> Kg</div>
+                            <div class="spec-item"><i data-lucide="truck" size="16"></i> <?php echo $car['transmisi']; ?></div>
                             <?php if ($car['ac']): ?>
-                                <div class="spec-item"><i data-lucide="wind" size="16"></i> AC</div>
+                                <div class="spec-item"><i data-lucide="shield-check" size="16"></i> Aman</div>
                             <?php endif; ?>
                         </div>
-                        <a href="detail.php?id=<?php echo $car['id']; ?>" class="btn btn-primary" style="width: 100%;">Lihat Detail</a>
+                        <a href="detail.php?id=<?php echo $car['id']; ?>" class="btn btn-primary" style="width: 100%;">Pesan Sekarang</a>
                     </div>
                 </div>
             <?php endwhile; ?>

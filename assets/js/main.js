@@ -1,12 +1,46 @@
 /**
- * NeiMove - Main JavaScript
+ * NeiNeiMove - Main JavaScript
  * Handles UI interactions and icon initialization
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize Lucide Icons
-    if (typeof lucide !== 'undefined') {
-        lucide.createIcons();
+    // Mobile Menu Toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+
+            
+            // Toggle icon between menu and x
+            const iconName = navMenu.classList.contains('active') ? 'x' : 'menu';
+            navToggle.innerHTML = `<i data-lucide="${iconName}" style="width: 28px; height: 28px;"></i>`;
+            lucide.createIcons();
+            
+            if (navMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden'; // Prevent scroll when menu open
+                document.querySelector('.navbar').classList.add('scrolled');
+            } else {
+                document.body.style.overflow = ''; // Re-enable scroll
+                if (window.scrollY <= 20) {
+                    document.querySelector('.navbar').classList.remove('scrolled');
+                }
+            }
+        });
+
+        // Close menu when clicking a link
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                document.body.style.overflow = '';
+                if (window.scrollY <= 20) {
+                    document.querySelector('.navbar').classList.remove('scrolled');
+                }
+                navToggle.innerHTML = `<i data-lucide="menu" style="width: 28px; height: 28px;"></i>`;
+                lucide.createIcons();
+            });
+        });
     }
 
     // Initialize Swiper for Hero Section
@@ -31,13 +65,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Navbar Scroll Effect
     const navbar = document.querySelector('.navbar');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 20) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
+    if (navbar) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    }
 
     // Advanced Animation on Scroll (AOS) with Staggered Fade
     const fadeElements = document.querySelectorAll('.car-card, .filter-wrapper, .detail-main, .detail-sidebar');
@@ -53,14 +89,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Apply a staggered delay based on appearance time
                 setTimeout(() => {
                     entry.target.classList.add('visible');
                 }, staggerDelay);
                 
-                staggerDelay += 150; // 150ms delay between each element
+                staggerDelay += 150;
 
-                // Reset stagger if no new elements intersect soon
                 clearTimeout(resetStaggerTimeout);
                 resetStaggerTimeout = setTimeout(() => {
                     staggerDelay = 0;
@@ -77,10 +111,8 @@ document.addEventListener('DOMContentLoaded', () => {
         el.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
         observer.observe(el);
     });
-});
 
-// Helper for animations
-document.addEventListener('DOMContentLoaded', () => {
+    // Helper for animations
     const style = document.createElement('style');
     style.innerHTML = `
         .visible {
@@ -89,4 +121,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     `;
     document.head.appendChild(style);
+
+    // Initialize Lucide Icons at the end so it doesn't block critical events if it fails
+    try {
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+    } catch (e) {
+        console.error("Lucide Icons Error:", e);
+    }
 });

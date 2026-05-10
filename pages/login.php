@@ -13,10 +13,10 @@ $activePage = 'login';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | NeiMove</title>
+    <title>Login | NeiNeiMove</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body class="login-body">
@@ -24,7 +24,7 @@ $activePage = 'login';
     <section class="login-section">
         <div class="login-card">
             <div class="login-header">
-                <a href="home.php" class="brand-text">Nei<span>Move</span></a>
+                <a href="home.php" class="brand-text">NeiNei<span>Move</span></a>
                 <h1>Welcome Back</h1>
                 <p>Please enter your details to sign in.</p>
             </div>

@@ -32,10 +32,10 @@ $activePage = 'dashboard';
 include '../includes/header.php';
 ?>
 
-<section class="page-header">
+<section class="page-header dashboard-header">
     <div class="container">
         <h1 style="font-size: 2.5rem; font-weight: 800;">Halo, <span class="text-primary"><?php echo htmlspecialchars($user_nama); ?></span>!</h1>
-        <p>Kelola penyewaan mobil Anda dan pantau riwayat pesanan dengan mudah.</p>
+        <p>Kelola pengiriman armada Anda dan pantau riwayat pesanan dengan mudah.</p>
     </div>
 </section>
 
@@ -49,9 +49,9 @@ include '../includes/header.php';
         <?php endif; ?>
 
         <div class="content-card">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2.5rem;">
+            <div class="content-card-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2.5rem;">
                 <h2 style="font-size: 1.5rem; font-weight: 700;">Riwayat Penyewaan</h2>
-                <a href="home.php" class="btn btn-primary btn-sm">Sewa Mobil Lagi</a>
+                <a href="home.php" class="btn btn-primary btn-sm">Pesan Armada Lagi</a>
             </div>
 
             <?php if ($bookings->num_rows > 0): ?>
@@ -59,7 +59,7 @@ include '../includes/header.php';
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>Mobil & Layanan</th>
+                                <th>Armada & Layanan</th>
                                 <th>Tanggal Sewa</th>
                                 <th>Total Harga</th>
                                 <th>Status</th>
@@ -110,10 +110,10 @@ include '../includes/header.php';
                 </div>
             <?php else: ?>
                 <div style="text-align: center; padding: 5rem 2rem;">
-                    <i data-lucide="car" size="48" style="color: var(--gray-200); margin-bottom: 1.5rem; opacity: 0.5;"></i>
+                    <i data-lucide="package" class="empty-state-icon" size="48" style="color: var(--gray-200); margin-bottom: 1.5rem; opacity: 0.5;"></i>
                     <h3 style="color: var(--secondary); margin-bottom: 0.5rem;">Belum ada pesanan.</h3>
-                    <p style="color: var(--secondary); opacity: 0.6; margin-bottom: 2rem;">Mulai perjalanan Anda dengan pilihan mobil premium kami.</p>
-                    <a href="home.php" class="btn btn-primary">Lihat Mobil</a>
+                    <p style="color: var(--secondary); opacity: 0.6; margin-bottom: 2rem;">Mulai pengiriman Anda dengan pilihan armada premium kami.</p>
+                    <a href="home.php" class="btn btn-primary">Lihat Armada</a>
                 </div>
             <?php endif; ?>
         </div>

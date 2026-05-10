@@ -23,12 +23,12 @@ include '../includes/header.php';
                 <div style="display: flex; gap: 0.5rem; color: #f59e0b; margin-bottom: 1rem;">
                     <i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i>
                 </div>
-                <p style="color: var(--secondary); margin-bottom: 1.5rem; font-style: italic;">"Mobilnya sangat terawat dan wangi. Pelayanan dari tim NeiMove juga sangat profesional. Sangat direkomendasikan!"</p>
+                <p style="color: var(--secondary); margin-bottom: 1.5rem; font-style: italic;">"Pengiriman barang sangat cepat dan aman. Pelayanan dari tim NeiNeiMove juga sangat profesional. Sangat direkomendasikan!"</p>
                 <div style="display: flex; align-items: center; gap: 1rem;">
                     <img src="https://ui-avatars.com/api/?name=Andi+S&background=random" style="width: 40px; border-radius: 50%;">
                     <div>
                         <h5 style="font-weight: 700; font-size: 0.9rem;">Andi S.</h5>
-                        <p style="font-size: 0.8rem; color: var(--secondary);">Sewa Innova Reborn</p>
+                        <p style="font-size: 0.8rem; color: var(--secondary);">Pengiriman Paket Besar</p>
                     </div>
                 </div>
             </div>
@@ -38,12 +38,12 @@ include '../includes/header.php';
                 <div style="display: flex; gap: 0.5rem; color: #f59e0b; margin-bottom: 1rem;">
                     <i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star"></i>
                 </div>
-                <p style="color: var(--secondary); margin-bottom: 1.5rem; font-style: italic;">"Driver sangat on-time dan hafal jalan. Perjalanan bisnis saya jadi lancar tanpa hambatan."</p>
+                <p style="color: var(--secondary); margin-bottom: 1.5rem; font-style: italic;">"Kurir sangat on-time dan profesional. Pindahan rumah saya jadi lancar tanpa hambatan."</p>
                 <div style="display: flex; align-items: center; gap: 1rem;">
                     <img src="https://ui-avatars.com/api/?name=Budi+Wibowo&background=random" style="width: 40px; border-radius: 50%;">
                     <div>
                         <h5 style="font-weight: 700; font-size: 0.9rem;">Budi Wibowo</h5>
-                        <p style="font-size: 0.8rem; color: var(--secondary);">Sewa Alphard (Driver)</p>
+                        <p style="font-size: 0.8rem; color: var(--secondary);">Pindahan Rumah (Truk)</p>
                     </div>
                 </div>
             </div>
@@ -53,12 +53,12 @@ include '../includes/header.php';
                 <div style="display: flex; gap: 0.5rem; color: #f59e0b; margin-bottom: 1rem;">
                     <i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i>
                 </div>
-                <p style="color: var(--secondary); margin-bottom: 1.5rem; font-style: italic;">"Proses booking super cepat dan transparan. Tidak ada biaya tersembunyi. Pasti akan sewa lagi di sini."</p>
+                <p style="color: var(--secondary); margin-bottom: 1.5rem; font-style: italic;">"Proses booking pengiriman super cepat dan transparan. Tidak ada biaya tersembunyi. Pasti akan pakai jasa ini lagi."</p>
                 <div style="display: flex; align-items: center; gap: 1rem;">
                     <img src="https://ui-avatars.com/api/?name=Siti+A&background=random" style="width: 40px; border-radius: 50%;">
                     <div>
                         <h5 style="font-weight: 700; font-size: 0.9rem;">Siti A.</h5>
-                        <p style="font-size: 0.8rem; color: var(--secondary);">Sewa Honda Brio</p>
+                        <p style="font-size: 0.8rem; color: var(--secondary);">Pengiriman Kargo</p>
                     </div>
                 </div>
             </div>
@@ -72,21 +72,21 @@ include '../includes/header.php';
         <div style="display: flex; flex-direction: column; gap: 1rem; max-width: 800px; margin: 0 auto;">
             <div style="border: 1px solid var(--gray-200); border-radius: 16px; padding: 1.5rem; background: white;">
                 <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: center;">
-                    Apa saja syarat untuk menyewa kendaraan?
+                    Apa saja syarat untuk menggunakan layanan pengiriman?
                     <i data-lucide="chevron-down" style="color: var(--secondary);"></i>
                 </h4>
                 <p style="color: var(--secondary); font-size: 0.95rem; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--gray-100);">
-                    Untuk menyewa kendaraan, pelanggan perlu menunjukkan KTP yang masih berlaku dan SIM (untuk lepas kunci). Selain itu, penyewa diwajibkan mengisi data diri serta melakukan pembayaran sesuai ketentuan. Untuk beberapa jenis kendaraan, mungkin diperlukan deposit sebagai jaminan.
+                    Untuk menggunakan layanan kami, Anda perlu mengisi formulir pengiriman dan menyetujui syarat & ketentuan logistik kami. Kami mewajibkan identitas pengirim yang jelas demi keamanan bersama. Untuk barang berharga, disarankan menggunakan asuransi tambahan.
                 </p>
             </div>
 
             <div style="border: 1px solid var(--gray-200); border-radius: 16px; padding: 1.5rem; background: white;">
                 <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: center;">
-                    Apakah harga sewa sudah termasuk sopir dan bahan bakar?
+                    Apakah harga pengiriman sudah termasuk biaya asuransi?
                     <i data-lucide="chevron-down" style="color: var(--secondary);"></i>
                 </h4>
                 <p style="color: var(--secondary); font-size: 0.95rem; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--gray-100);">
-                    Harga sewa tergantung pada paket yang dipilih. Tersedia pilihan lepas kunci (tanpa sopir) dan dengan sopir. Biaya bahan bakar umumnya tidak termasuk dalam harga sewa, kecuali pada paket tertentu yang sudah mencakup sopir dan BBM.
+                    Harga layanan tergantung pada paket armada dan jarak pengiriman yang dipilih. Biaya asuransi standar sudah termasuk, namun untuk proteksi ekstra kami menyediakan opsi asuransi pengiriman tambahan.
                 </p>
             </div>
         </div>
