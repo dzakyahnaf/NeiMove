@@ -71,7 +71,7 @@ include '../includes/header.php';
                                 <tr>
                                     <td>
                                         <div class="car-info">
-                                            <img src="../assets/images/cars/<?php echo $row['foto']; ?>" class="car-img-thumb" style="width: 80px; height: 50px;">
+                                            <img src="../assets/images/angkutan/<?php echo $row['foto']; ?>" class="car-img-thumb" style="width: 80px; height: 50px;">
                                             <div>
                                                 <div style="font-weight: 700;"><?php echo htmlspecialchars($row['nama_mobil']); ?></div>
                                                 <div style="font-size: 0.75rem; color: var(--secondary); display: flex; align-items: center; gap: 0.25rem;">

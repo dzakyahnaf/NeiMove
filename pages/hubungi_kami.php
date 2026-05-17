@@ -50,7 +50,7 @@ include '../includes/header.php';
                     <h3 style="font-size: 1.2rem; font-weight: 700; margin: 0;">ALAMAT</h3>
                 </div>
                 <p style="color: var(--secondary); line-height: 1.6; margin-left: 3.5rem;">
-                    Jl. Laksda Adisucipto No.Km. 6, Ambarukmo, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281
+                    Bersole, Karangpucung, Kec. Purwokerto Sel., Kabupaten Banyumas, Jawa Tengah 53142
                 </p>
             </div>
         </div>
@@ -68,7 +68,7 @@ include '../includes/header.php';
                         Apakah saya dapat melacak pengiriman barang saya?
                     </h4>
                     <p style="color: var(--secondary); line-height: 1.6; margin-left: 2.25rem;">
-                        Ya! Lalamove memungkinkan kamu untuk melacak tiap order, memberimu informasi terbaru tentang status pengirimanmu. Pantau pengirimanmu secara real-time dan dapatkan pemberitahuan langsung saat pengiriman telah selesai.<br><br>Kamu bahkan dapat mengirimkan informasi pelacakan ke penerima, sehingga mereka mengetahui kapan barang akan tiba.
+                        Ya! NeiNeiMove memungkinkan kamu untuk melacak tiap order, memberimu informasi terbaru tentang status pengirimanmu. Pantau pengirimanmu secara real-time dan dapatkan pemberitahuan langsung saat pengiriman telah selesai.<br><br>Kamu bahkan dapat mengirimkan informasi pelacakan ke penerima, sehingga mereka mengetahui kapan barang akan tiba.
                     </p>
                 </div>
 
@@ -90,13 +90,14 @@ include '../includes/header.php';
                         Apa yang terjadi jika barang saya rusak saat di perjalanan?
                     </h4>
                     <p style="color: var(--secondary); line-height: 1.6; margin-left: 2.25rem; margin-bottom: 1rem;">
-                        Neineimove memberikan kompensasi kepada pelanggan atas kerugian langsung barang-barang yang hilang, dicuri, atau rusak selama pengangkutan atau pengiriman. Kamu akan mendapatkan kompensasi dengan detail sebagai berikut:
+                        NeiNeiMove memberikan kompensasi kepada pelanggan atas kerugian langsung barang-barang yang hilang, dicuri, atau rusak selama pengangkutan atau pengiriman. Kamu akan mendapatkan kompensasi dengan detail sebagai berikut:
                     </p>
                     <ul style="color: var(--secondary); line-height: 1.6; margin-left: 3.5rem; margin-bottom: 1rem; list-style-type: disc;">
                         <li><strong>Motor:</strong> Rp1.000.000</li>
                         <li><strong>Van:</strong> Rp4.000.000</li>
                         <li><strong>Pickup Bak:</strong> Rp6.000.000</li>
                         <li><strong>Fuso Box:</strong> Rp6.000.000</li>
+                        <li><strong>Tronton Wingbox:</strong> Rp10.000.000</li>
                     </ul>
                     <p style="color: var(--secondary); line-height: 1.6; margin-left: 2.25rem; font-style: italic;">
                         Cakupan ini tersedia sebagai layanan tambahan kapan pun Anda butuhkan tanpa dipungut biaya tambahan.

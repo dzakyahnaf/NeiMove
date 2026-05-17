@@ -70,7 +70,7 @@ $drivers = [
         <?php foreach($drivers as $driver): ?>
             <div style="background: white; border-radius: 20px; overflow: hidden; border: 1px solid var(--gray-100); box-shadow: var(--card-shadow); transition: var(--transition); display: flex; flex-direction: column;">
                 <div style="width: 100%; height: 300px; overflow: hidden; background: var(--gray-50);">
-                    <img src="../assets/images/driver/<?php echo urlencode($driver['foto']); ?>" alt="<?php echo htmlspecialchars($driver['nama']); ?>" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+                    <img src="../assets/images/driver/<?php echo rawurlencode($driver['foto']); ?>" alt="<?php echo htmlspecialchars($driver['nama']); ?>" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
                 </div>
                 <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">

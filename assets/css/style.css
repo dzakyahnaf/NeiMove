@@ -116,6 +116,10 @@ ul {
     color: white;
 }
 
+.navbar.navbar-transparent:not(.scrolled) .brand-text span {
+    color: var(--accent);
+}
+
 .navbar.navbar-transparent:not(.scrolled) .nav-menu-desktop a {
     color: rgba(255, 255, 255, 0.8);
 }
