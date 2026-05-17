@@ -37,8 +37,18 @@
                     <?php if(isset($_SESSION['user_id'])): ?>
                         <li><a href="../pages/dashboard.php" class="<?php echo ($activePage == 'dashboard') ? 'active' : ''; ?>">Dashboard</a></li>
                     <?php endif; ?>
+                    <li><a href="../pages/driver.php" class="<?php echo ($activePage == 'driver') ? 'active' : ''; ?>">Driver</a></li>
+                    <li><a href="../pages/rewards.php" class="<?php echo ($activePage == 'rewards') ? 'active' : ''; ?>">Rewards</a></li>
                     <li><a href="../pages/testimoni.php" class="<?php echo ($activePage == 'testimoni') ? 'active' : ''; ?>">Testimonials</a></li>
-                    <li><a href="../pages/tentang.php" class="<?php echo ($activePage == 'tentang') ? 'active' : ''; ?>">About</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropdown-toggle <?php echo (in_array($activePage, ['tentang', 'hubungi'])) ? 'active' : ''; ?>">
+                            Perusahaan <i data-lucide="chevron-down" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle;"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../pages/tentang.php" class="<?php echo ($activePage == 'tentang') ? 'active' : ''; ?>">Tentang Kami</a></li>
+                            <li><a href="../pages/hubungi_kami.php" class="<?php echo ($activePage == 'hubungi') ? 'active' : ''; ?>">Hubungi Kami</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
             
@@ -60,15 +70,17 @@
         </div>
     </header>
 
-    <!-- Mobile Menu Overlay (OUTSIDE header so it's not constrained) -->
     <div class="nav-menu" id="nav-menu">
         <ul>
             <li><a href="../pages/home.php" class="<?php echo ($activePage == 'home') ? 'active' : ''; ?>">Home</a></li>
             <?php if(isset($_SESSION['user_id'])): ?>
                 <li><a href="../pages/dashboard.php" class="<?php echo ($activePage == 'dashboard') ? 'active' : ''; ?>">Dashboard</a></li>
             <?php endif; ?>
+            <li><a href="../pages/driver.php" class="<?php echo ($activePage == 'driver') ? 'active' : ''; ?>">Driver</a></li>
+            <li><a href="../pages/rewards.php" class="<?php echo ($activePage == 'rewards') ? 'active' : ''; ?>">Rewards</a></li>
             <li><a href="../pages/testimoni.php" class="<?php echo ($activePage == 'testimoni') ? 'active' : ''; ?>">Testimonials</a></li>
-            <li><a href="../pages/tentang.php" class="<?php echo ($activePage == 'tentang') ? 'active' : ''; ?>">About</a></li>
+            <li><a href="../pages/tentang.php" class="<?php echo ($activePage == 'tentang') ? 'active' : ''; ?>">Tentang Kami</a></li>
+            <li><a href="../pages/hubungi_kami.php" class="<?php echo ($activePage == 'hubungi') ? 'active' : ''; ?>">Hubungi Kami</a></li>
         </ul>
 
         <div class="mobile-actions">

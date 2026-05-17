@@ -11,15 +11,18 @@
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="../pages/home.php">Armada</a></li>
+                        <li><a href="../pages/driver.php">Driver</a></li>
+                        <li><a href="../pages/rewards.php">Rewards</a></li>
                         <li><a href="../pages/testimoni.php">Testimonials</a></li>
-                        <li><a href="../pages/tentang.php">About Us</a></li>
+                        <li><a href="../pages/tentang.php">Tentang Kami</a></li>
+                        <li><a href="../pages/hubungi_kami.php">Hubungi Kami</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
                     <h4>Contact</h4>
-                    <p>Jl. Jenderal Sudirman No. 1</p>
-                    <p>Jakarta, Indonesia</p>
-                    <p>+62 812 3456 7890</p>
+                    <p>Jl. Laksda Adisucipto No.Km. 6, Ambarukmo</p>
+                    <p>Yogyakarta 55281</p>
+                    <p>081215690152</p>
                 </div>
             </div>
             <div class="footer-bottom">

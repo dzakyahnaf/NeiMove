@@ -38,6 +38,10 @@ CREATE TABLE IF NOT EXISTS `mobil` (
   `bluetooth` TINYINT(1) DEFAULT 1,
   `deskripsi` TEXT,
   `tersedia` TINYINT(1) DEFAULT 1,
+  `jarak_dasar` VARCHAR(50),
+  `berat_maksimal` VARCHAR(50),
+  `batas_ukuran` VARCHAR(100),
+  `pengiriman_antarkota` TEXT,
   `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 

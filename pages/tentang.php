@@ -26,15 +26,15 @@ include '../includes/header.php';
 
         <!-- Text Profile -->
         <div class="detail-main" style="background: transparent; box-shadow: none; padding: 0 2rem;">
-            <div class="badge" style="background: var(--primary); color: white; padding: 0.5rem 1rem; border-radius: 100px; font-weight: 800; font-size: 0.75rem; margin-bottom: 1.5rem; display: inline-block;">PROFIL KAMI</div>
+            <div class="badge" style="background: var(--primary); color: white; padding: 0.5rem 1rem; border-radius: 100px; font-weight: 800; font-size: 0.75rem; margin-bottom: 1.5rem; display: inline-block;">TENTANG KAMI</div>
             <h2 style="font-size: 2.5rem; font-weight: 900; margin-bottom: 1.5rem; color: var(--dark); line-height: 1.2;">Solusi Logistik<br>Cepat & Aman.</h2>
             
             <p style="color: var(--secondary); font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
-                <strong>NeiNeiMove</strong> hadir sebagai mitra logistik terpercaya di Jakarta dan sekitarnya. Kami berdedikasi untuk memberikan layanan pengiriman yang aman, tepat waktu, dan profesional bagi setiap mitra kami.
+                Didirikan di Yogyakarta, Jawa Tengah pada tahun 2025, <strong>NeiNeiMove</strong> merupakan perusahaan startup di bidang transportasi dan pengiriman yang hadir dengan tujuan mempermudah masyarakat dalam melakukan mobilitas serta distribusi barang secara cepat, praktis, dan terjangkau. Melalui satu platform, individu, pelaku usaha kecil, hingga perusahaan dapat mengakses berbagai pilihan armada yang dioperasikan oleh mitra pengemudi profesional.
             </p>
             
             <p style="color: var(--secondary); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
-                Baik untuk pengiriman barang bisnis, pindahan rumah, hingga distribusi logistik skala besar, kami siap melayani Anda dengan armada yang selalu siap dan tim yang handal.
+                Berbasis teknologi, NeiNeiMove mengintegrasikan pengguna, kendaraan, dan proses pengiriman dalam satu sistem yang efisien, sehingga mampu mendukung kebutuhan transportasi dan logistik secara menyeluruh di berbagai wilayah di Indonesia.
             </p>
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
@@ -48,10 +48,35 @@ include '../includes/header.php';
                     <h4 style="font-weight: 800; margin-bottom: 0.5rem;">Reliability</h4>
                     <p style="font-size: 0.9rem; color: var(--secondary);">Layanan yang tepat waktu dan dapat diandalkan untuk segala jenis pengiriman.</p>
                 </div>
-                <div style="background: var(--gray-50); padding: 1.5rem; border-radius: 16px; border: 1px solid var(--gray-100); grid-column: 1 / -1;">
-                    <i data-lucide="user-check" style="color: var(--primary); width: 32px; height: 32px; margin-bottom: 1rem;"></i>
-                    <h4 style="font-weight: 800; margin-bottom: 0.5rem;">Professional Drivers</h4>
-                    <p style="font-size: 0.9rem; color: var(--secondary);">Driver berpengalaman dan profesional yang mengutamakan keselamatan dan pelayanan.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Owner Profile Card -->
+    <div style="margin-top: 5rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+        <div style="background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); border-radius: 24px; padding: 3rem; display: flex; flex-wrap: wrap; gap: 3rem; align-items: center; border: 1px solid var(--gray-100); box-shadow: var(--card-shadow);">
+            <div style="flex: 1; min-width: 250px;">
+                <h3 style="font-size: 2.5rem; font-weight: 900; color: var(--dark); margin-bottom: 0.25rem;">Neisha Reya</h3>
+                <p style="color: var(--primary); font-weight: 800; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 2rem;">Owner NeiNeiMove</p>
+                
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <a href="https://wa.me/6281215690152" target="_blank" style="display: flex; align-items: center; gap: 1rem; color: var(--secondary); text-decoration: none; padding: 0.75rem 1.5rem; background: white; border-radius: 100px; border: 1px solid var(--gray-100); transition: var(--transition);" onmouseover="this.style.borderColor='var(--primary)'; this.style.color='var(--primary)'" onmouseout="this.style.borderColor='var(--gray-100)'; this.style.color='var(--secondary)'">
+                        <i data-lucide="message-circle" style="width: 20px; height: 20px;"></i>
+                        <span style="font-weight: 600;">081215690152</span>
+                    </a>
+                    <a href="https://instagram.com/reyaneisha" target="_blank" style="display: flex; align-items: center; gap: 1rem; color: var(--secondary); text-decoration: none; padding: 0.75rem 1.5rem; background: white; border-radius: 100px; border: 1px solid var(--gray-100); transition: var(--transition);" onmouseover="this.style.borderColor='var(--primary)'; this.style.color='var(--primary)'" onmouseout="this.style.borderColor='var(--gray-100)'; this.style.color='var(--secondary)'">
+                        <i data-lucide="instagram" style="width: 20px; height: 20px;"></i>
+                        <span style="font-weight: 600;">@reyaneisha</span>
+                    </a>
+                    <a href="mailto:reyaneisha@gmail.com" style="display: flex; align-items: center; gap: 1rem; color: var(--secondary); text-decoration: none; padding: 0.75rem 1.5rem; background: white; border-radius: 100px; border: 1px solid var(--gray-100); transition: var(--transition);" onmouseover="this.style.borderColor='var(--primary)'; this.style.color='var(--primary)'" onmouseout="this.style.borderColor='var(--gray-100)'; this.style.color='var(--secondary)'">
+                        <i data-lucide="mail" style="width: 20px; height: 20px;"></i>
+                        <span style="font-weight: 600;">reyaneisha@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+            <div style="flex: 1; min-width: 250px; text-align: center;">
+                <div style="width: 200px; height: 200px; border-radius: 50%; background: var(--gray-100); display: inline-flex; justify-content: center; align-items: center; border: 4px solid white; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden;">
+                    <i data-lucide="user" style="width: 80px; height: 80px; color: var(--gray-300);"></i>
                 </div>
             </div>
         </div>
@@ -62,11 +87,11 @@ include '../includes/header.php';
         <div style="display: inline-flex; justify-content: center; align-items: center; width: 64px; height: 64px; background: rgba(248, 123, 27, 0.1); border-radius: 50%; margin-bottom: 1.5rem;">
             <i data-lucide="map-pin" style="color: var(--primary); width: 32px; height: 32px;"></i>
         </div>
-        <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">Kunjungi Kantor Kami</h2>
+        <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">Lokasi Operasional</h2>
         <p style="color: var(--secondary); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
-            Jl. Metro Pondok Indah, RT.1/RW.16, Pd. Pinang,<br>Kec. Kebayoran Lama, Kota Jakarta Selatan,<br>Daerah Khusus Ibukota Jakarta 12310
+            Bersole, Karangpucung, Kec. Purwokerto Sel.,<br>Kabupaten Banyumas, Jawa Tengah 53142
         </p>
-        <a href="https://maps.google.com/?q=Jl.+Metro+Pondok+Indah,+Jakarta+Selatan" target="_blank" class="btn btn-primary">
+        <a href="https://maps.google.com/?q=Bersole,+Karangpucung,+Purwokerto+Selatan" target="_blank" class="btn btn-primary">
             <i data-lucide="map"></i> Buka di Google Maps
         </a>
     </div>
