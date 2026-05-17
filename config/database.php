@@ -4,10 +4,10 @@
  * 🚗 Rental Mobil Project
  */
 
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');       // Default XAMPP user
-define('DB_PASS', '');           // Default XAMPP password (empty)
-define('DB_NAME', 'rental_mobil');
+define('DB_HOST', getenv('DB_HOST') ?: 'localhost');
+define('DB_USER', getenv('DB_USER') ?: 'root');       // Default XAMPP user
+define('DB_PASS', getenv('DB_PASS') !== false ? getenv('DB_PASS') : '');           // Default XAMPP password (empty)
+define('DB_NAME', getenv('DB_NAME') ?: 'rental_mobil');
 define('DB_CHARSET', 'utf8mb4');
 
 /**
