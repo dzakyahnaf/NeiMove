@@ -76,7 +76,7 @@ include '../includes/header.php';
             </div>
             <div style="flex: 1; min-width: 250px; text-align: center;">
                 <div style="width: 200px; height: 200px; border-radius: 50%; background: var(--gray-100); display: inline-flex; justify-content: center; align-items: center; border: 4px solid white; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden;">
-                    <i data-lucide="user" style="width: 80px; height: 80px; color: var(--gray-300);"></i>
+                    <img src="../assets/images/profil.png" alt="Neisha Reya" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
             </div>
         </div>

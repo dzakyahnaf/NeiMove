@@ -97,7 +97,7 @@ include '../includes/header.php';
         <h2 style="color: white; font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">Butuh Bantuan Lebih Lanjut?</h2>
         <p style="opacity: 0.8; margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto;">Tim customer service kami siap melayani Anda 24/7 melalui WhatsApp.</p>
         
-        <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-primary" style="background: #25D366; color: white; padding: 1rem 2rem; font-size: 1.1rem;">
+        <a href="https://wa.me/6281215690152" target="_blank" class="btn btn-primary" style="background: #25D366; color: white; padding: 1rem 2rem; font-size: 1.1rem;">
             <i data-lucide="message-circle"></i> Hubungi WhatsApp Cepat
         </a>
     </div>
